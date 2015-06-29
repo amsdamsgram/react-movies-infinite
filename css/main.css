@@ -1,0 +1,115 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p,
+blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em,
+img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u,
+i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table,
+caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary,time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+body{
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q{
+    quotes: none;
+}
+blockquote:before, blockquote:after,q:before, q:after{
+    content: '';
+    content: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input[type=text],input[type=password]{
+    -webkit-appearance: none;
+}
+a{
+    text-decoration: none;
+    color: #58585A;
+}
+input{
+    outline: none;
+}
+.clear:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* END RESET */
+
+
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/HelveticaLTStd-Light.otf);
+}
+
+html{
+    font-family: myFont,proxima-nova, arial regular, arial, sans-serif;
+    background: url(https://assets.streamnation.com/assets/background/background.jpg?20150626014934439) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#movieList{
+    padding: 2% 0;
+    color: white;
+}
+#movieList .movie{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-bottom: 2%;
+}
+#movieList .movieName{
+    text-align: center;
+}
+#movieList .movieCoverWrapper{
+    position: relative;
+    text-align: center;
+    height: 450px;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+#movieList .movieCoverWrapper:hover{
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(163,200,86,0.25)), color-stop(31%, rgba(163,200,86,0.41)), color-stop(100%, rgba(163,200,86,0.75)));
+    background-image: -moz-linear-gradient(top, rgba(163,200,86,0.25) 0%, rgba(163,200,86,0.41) 31%, rgba(163,200,86,0.75) 100%);
+    background-image: -webkit-linear-gradient(top, rgba(163,200,86,0.25) 0%, rgba(163,200,86,0.41) 31%, rgba(163,200,86,0.75) 100%);
+    background-image: linear-gradient(to bottom, rgba(163,200,86,0.25) 0%, rgba(163,200,86,0.41) 31%, rgba(163,200,86,0.75) 100%);
+}
+#movieList .movieCover{
+    position: absolute;
+    height: auto;
+    max-width: 95%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
